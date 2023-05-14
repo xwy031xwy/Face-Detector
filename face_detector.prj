@@ -1,0 +1,75 @@
+<deployment-project plugin="plugin.apptool" plugin-version="1.0">
+  <configuration build-checksum="2815044847" file="C:\Users\admin\Dropbox\二年秋\MATLAB\19K1109_final\face_detector.prj" location="C:\Users\admin\Dropbox\二年秋\MATLAB\19K1109_final" name="face_detector" target="target.mlapps" target-name="アプリのパッケージ化">
+    <param.appname>face_detector</param.appname>
+    <param.authnamewatermark>Xia Weiyi (19K1109)</param.authnamewatermark>
+    <param.email>weiyi.xia.9a@stu.hosei.ac.jp</param.email>
+    <param.company />
+    <param.icon />
+    <param.icons />
+    <param.summary>顔の検出プログラム</param.summary>
+    <param.description>使い方
+1. 「画像を選択...」ボタンを押し、ファイルを選ぶ。
+2. 「実行」ボタンを押し、二値化画像と検出結果が順に示される。
+3. 「クリア」ボタンを押し、プログラムがリセットされる。</param.description>
+    <param.screenshot />
+    <param.version>1.0</param.version>
+    <param.products.name />
+    <param.products.id />
+    <param.products.version />
+    <param.platforms />
+    <param.output>${PROJECT_ROOT}</param.output>
+    <param.guid>6f274c13-8286-4e47-a0c7-61c71811dec5</param.guid>
+    <unset>
+      <param.company />
+      <param.icon />
+      <param.icons />
+      <param.screenshot />
+      <param.version />
+      <param.products.name />
+      <param.products.id />
+      <param.products.version />
+      <param.platforms />
+      <param.output />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\face_detector.mlapp</file>
+    </fileset.main>
+    <fileset.depfun>
+      <file>${PROJECT_ROOT}\findeye.m</file>
+      <file>${PROJECT_ROOT}\skin.m</file>
+      <file>${PROJECT_ROOT}\パンダの顔アイコン3.png</file>
+    </fileset.depfun>
+    <fileset.resources />
+    <fileset.package />
+    <build-deliverables>
+      <file location="C:\Users\admin\Dropbox\二年秋\MATLAB" name="19K1109_final" optional="false">C:\Users\admin\Dropbox\二年秋\MATLAB\19K1109_final</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2020a</root>
+      <toolboxes>
+        <toolbox name="neuralnetwork" />
+      </toolboxes>
+      <toolbox>
+        <neuralnetwork>
+          <enabled>true</enabled>
+        </neuralnetwork>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>10.0</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
